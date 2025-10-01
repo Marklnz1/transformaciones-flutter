@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class EtiquetaArrastrable extends StatelessWidget {
   final String texto;
-  final void Function(int) alArrastrar;
+  final void Function(int delta) alArrastrar;
   final bool invertirDireccion;
 
   const EtiquetaArrastrable({
@@ -20,7 +20,6 @@ class EtiquetaArrastrable extends StatelessWidget {
       child: MouseRegion(
         cursor: SystemMouseCursors.resizeLeftRight,
         child: Container(
-          margin: const EdgeInsets.symmetric(vertical: 6),
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
             color: Color(0xFF2C2C2C),

@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 
 class DibujarCruz {
-  final Offset baseU; // Vector horizontal
-  final Offset baseV; // Vector vertical
-
-  DibujarCruz({required this.baseU, required this.baseV});
-
   void dibujar(Canvas lienzo, Size size, double escala) {
     final pincelLinea = Paint()
-      ..color = Colors.white
+      ..color = Colors.cyanAccent
       ..strokeWidth = 2 / escala;
 
     final pincelPunto = Paint()
-      ..color = Colors.red
+      ..color = Colors.cyanAccent
       ..style = PaintingStyle.fill;
 
     const double longitud = 1000;
-    lienzo.drawLine(-baseU * longitud, baseU * longitud, pincelLinea);
-    lienzo.drawLine(-baseV * longitud, baseV * longitud, pincelLinea);
-    lienzo.drawCircle(Offset.zero, 6 / escala, pincelPunto);
+    final Offset vectorX = const Offset(1, 0);
+    final Offset vectorY = const Offset(0, 1);
+
+    lienzo.drawLine(-vectorX * longitud, vectorX * longitud, pincelLinea);
+    lienzo.drawLine(-vectorY * longitud, vectorY * longitud, pincelLinea);
+    lienzo.drawCircle(Offset.zero, 8 / escala, pincelPunto);
   }
 }

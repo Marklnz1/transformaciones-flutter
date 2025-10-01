@@ -1,5 +1,3 @@
-// widgets/vector_input.dart
-
 import 'package:flutter/material.dart';
 
 class VectorInput extends StatelessWidget {
