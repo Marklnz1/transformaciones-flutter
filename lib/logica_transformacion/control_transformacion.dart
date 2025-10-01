@@ -11,14 +11,6 @@ class ControlTransformacion {
 
   ControlTransformacion() {
     ctrlRazon.addListener(() => onCambioRazon?.call());
-    ctrlRotacionReferencia.addListener(() => onCambioRotacion?.call());
   }
-
   VoidCallback? onCambioRazon;
-  VoidCallback? onCambioRotacion;
-
-  void dispose() {
-    ctrlRazon.dispose();
-    ctrlRotacionReferencia.dispose();
-  }
 }

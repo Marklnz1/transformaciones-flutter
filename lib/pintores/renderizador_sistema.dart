@@ -3,7 +3,7 @@ import 'package:transformaciones_app/logica_transformacion/control_transformacio
 import 'package:transformaciones_app/logica_transformacion/figura_transformada.dart';
 import 'package:transformaciones_app/pintores/dibujar_cruz.dart';
 import 'package:transformaciones_app/pintores/dibujar_figura.dart';
-import 'package:transformaciones_app/pintores/dibujar_grid.dart';
+import 'package:transformaciones_app/pintores/dibujar_cuadricula.dart';
 import 'package:transformaciones_app/pintores/dibujar_linea.dart';
 import 'package:transformaciones_app/pintores/dibujar_linea_rotada.dart';
 import 'package:transformaciones_app/pintores/dibujar_punto.dart';
